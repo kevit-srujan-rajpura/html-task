@@ -6,129 +6,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task4</title>
     <link rel="icon" href="kevitcomlogo.jpg">
+    <style>
+        .tf {
+            float: left;
+            width: 35%;
+        }
+    </style>
 </head>
 
 <body>
-
-    <form action="submit_page.html" method="get">
-        <fieldset
-            style="background-color:aliceblue; font-family:'Courier New', Courier, monospace; border-radius: 15px;">
-            <h1><ins>USER_DATA_FROM</ins></h1>
-            <div>
-                <label for="name">Name : </label>
-                <input id="name" name="username" placeholder="username" type="text" required
-                    style="border-radius: 5px;">
-            </div>
-            <br>
-            <div>
-                <label for="pass">Password : </label>
-                <input id="pass" name="Password" type="password" required style="border-radius: 5px;">
-            </div>
-            <br>
-            <div>
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" required value="kevit@" style="border-radius: 5px;">
-            </div>
-            <br>
-            <div>
-                <label for="age">Age</label>
-                <input id="age" name="age" type="number" min="1" max="200" style="border-radius: 5px;" value="18">
-            </div>
-            <br>
-            <div>
-                <label for="file"> Upload your id </label>
-                <input id="file" name="file" type="file" multiple style="border-radius: 5px;">
-            </div>
-            <br>
-            <div>
-                <label for="nmumber">Phone Number</label>
-                <input id="number" name="phone" type="tel" style="border-radius: 5px;">
-            </div>
-            <br>
-            <div>
-                <label for="range">Range of expertice </label>
-                <input type="range" id="range" name="range" min="0" max="100" value="10" style="border-radius: 5px;">
-            </div>
-            <br>
-            <div>
-                <label for="search">Search your id number here..</label>
-                <input id="Search" name="search" type="search" style="border-radius: 5px;">
-            </div><br>
-            <fieldset style="width: 350px; text-align: center;">
-                <legend><strong>your favourite framework</strong></legend>
+    <table>
+        <form action="submit_page.html" method="get">
+            <fieldset
+                style="background-color:aliceblue; font-family:Lato,Helvetica,Arial,sans-serif; border-radius: 15px;"
+                class="mainset">
+                <h1 style="text-align: center;"><ins>USER DATA FROM</ins></h1>
                 <div>
-                    <label for="ang">Angular</label>
-                    <input id="ang" name="angular" type="checkbox" checked>
+                    <div class="tf">
+                        <label for="name">Name : </label>
+                    </div>
+                    <div > <input id="name" name="username" placeholder="username" type="text" required
+                            style="border-radius: 5px;">
+                    </div>
                 </div>
+                <br>
 
                 <div>
-                    <label for="react">React</label>
-                    <input id="react" name="react" type="checkbox">
+                    <div class="tf">
+                        <label for="pass">Password : </label>
+                    </div>
+                    <div > <input id="pass" name="Password" type="password" required
+                            style="border-radius: 5px;">
+                    </div>
                 </div>
+
+                <br>
+
+                <div>
+                    <div class="tf">
+                        <label for="email">Email</label>
+                    </div>
+                    <div ><input id="email" type="email" name="email" required value="kevit@"
+                            style="border-radius: 5px;">
+                    </div>
+                </div>
+
+                <br>
+
+                <div>
+                    <div class="tf">
+                        <label for="age">Age</label>
+                    </div>
+                    <div ><input id="age" name="age" type="number" min="1" max="200"
+                            style="border-radius: 5px;" value="18">
+                    </div>
+                </div>
+
+                <br>
+
+                <div>
+                    <div class="tf">
+                        <label for="file"> Upload your id </label>
+                    </div>
+                    <div > <input id="file" name="file" type="file" multiple style="border-radius: 5px;">
+                    </div>
+                </div>
+
+                <br>
+
+                <div>
+                    <div class="tf">
+                        <label for="nmumber">Phone Number</label>
+                    </div>
+                    <div > <input id="number" name="phone" type="tel" style="border-radius: 5px;">
+                    </div>
+                </div>
+
+                <br>
+
+                <div>
+                    <div class="tf">
+                        <label for="range">Range of expertice </label>
+                    </div>
+                    <div ><input type="range" id="range" name="range" min="0" max="100" value="10"
+                            style="border-radius: 5px;">
+                    </div>
+                </div>
+
+                <br>
+
+                <div>
+                    <div class="tf">
+                        <label for="search">Search your id number here..</label>
+                    </div>
+                    <div><input id="Search" name="search" type="search" style="border-radius: 5px;">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <div class="tf">
+                        <label for="time">Select your appointment</label>
+                    </div>
+                    <div> <input id="time" name="time" type="datetime-local" style="border-radius: 5px;">
+                    </div>
+                </div>
+
+                <br>
+
+                <dv>
+                    <div class="tf">
+                        <label for="city">Choose your city</label>
+                    </div>
+                    <div > <select id="city" name="city;">
+                            <option value="rajkot">Rajkot</option>
+                            <option value="surat">Surat</option>
+                            <option value="anand">Anand</option>
+                            <option value="bhuj">Bhuj</option>
+                        </select>
+                    </div>
+                    </div>
+                    <br>
+
+                    <div>
+                        <div >
+                            <div class="tf">Write here ...</div>
+                            <div> <textarea placeholder="tell about your self" rows="4" cols="50"
+                                    style="border-radius: 7px;"></textarea></div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <div class="tf">
+                            <label for="url">Paste your Linkdin URL</label>
+                        </div>
+                        <div><input id="url" name="url" type="url" style="border-radius: 5px;">
+                        </div>
+                    </div>
+
+                    <br>
+                    <input type="hidden" value="hidden msg delivered">
+
+
+                    <br>
+
+                    <div >
+                        <div class="tf">
+                            <label>Select your branch</label>
+                        </div><br>
+                        <div>
+                            <input type="radio" id="it" name="branch" value="IT">
+                            <label for="it">IT</label>
+
+                        </div>
+                        <div>
+                            <input type="radio" id="com" name="branch" value="Computer">
+                            <label for="com">Computer</label>
+
+                        </div>
+
+                    </div>
+
+
+                    <br>
+
+                    <div>
+                        <div>
+                            <label>Choose known language</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="js" name="javascript">
+                            <label for="js">javascript</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="java" name="java">
+                            <label for="java">java</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="py" name="python">
+                            <label for="py">python</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c" name="C">
+                            <label for="c">C</label>
+                        </div>
+
+                    </div>
+                    <br>
+
+
+                    <div>
+                        <div class="tf">
+
+                            <label for="color">Choose your color for T-shirt</label>
+                        </div>
+                        <div><input id="color" name="color" type="color"
+                                style="border-radius: 5px; width: 10%;">
+                        </div><br><br>
+                        <div style="text-align: center;">
+                            <input type="reset" value="Reset Data" style="border-radius: 5px;" />
+                            <input type="submit" value="Submit Form" style="border-radius: 5px;" />
+                        </div>
+                    </div>
             </fieldset>
-            <br>
-            <fieldset style="width: 200px; text-align: center;">
-                <legend> <strong> your branch</strong></legend>
-                <div>
-
-                    <label for="it">IT</label>
-                    <input id="it" value="it" type="radio" name="branch" checked>
-                </div>
-
-                <div>
-                    <label for="com">Com</label>
-                    <input id="com" value="com" type="radio" name="branch">
-                </div>
-            </fieldset>
-            <br>
-            <div>
-                <label for="time">Select your appointment</label>
-                <input id="time" name="time" type="datetime-local" style="border-radius: 5px;">
-            </div>
-            <br>
-            <div>
-                <label for="city">Choose your city</label>
-                <select id="city" name="city">
-                    <option value="rajkot">Rajkot</option>
-                    <option value="surat">Surat</option>
-                    <option value="anand">Anand</option>
-                    <option value="bhuj">Bhuj</option>
-                </select>
-            </div>
-
-            <br>
-
-            <div>
-                <textarea placeholder="tell about your self" rows="4" cols="50" style="border-radius: 7px;"></textarea>
-            </div>
-            <br>
-
-            <div>
-                <label for="url">Paste your Linkdin URL</label>
-                <input id="url" name="url" type="url" style="border-radius: 5px;">
-            </div><br>
-            <input type="hidden" value="hidden msg delivered">
-            <div>
-                <label>Select your known language</label>
-                <select>
-                    <option value="js">javascript</option>
-                    <option value="python">python</option>
-                    <option value="java">java</option>
-                    <option value="c">C</option>
-                    <option value="cpp">C++</option>
-                </select>
-            </div><br>
-            <div>
-
-                <label for="color">Choose your color for T-shirt</label>
-                <input id="color" name="color" type="color" style="border-radius: 5px;">
-            </div><br>
-            <div style="text-align: center;"> <input type="reset" value="Reset Data" style="border-radius: 5px;" />
-                <input type="submit" value="Submit Form" style="border-radius: 5px;" />
-            </div>
-        </fieldset>
-    </form>
-
+        </form>
+    </table>
 </body>
 
 </html>
